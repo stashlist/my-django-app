@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Hello, Django!")
+    return render(request, 'index.html')  # `templates/index.html` を表示
